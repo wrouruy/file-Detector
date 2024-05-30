@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
 </head>
 <body>
-    <div class="wrap">
+    <div id="wrap">
         <div class="topUI">
             <div class="logoContainer">wr<i class="fa-regular fa-heart" id="heartFont"></i>uruy</div>
             <!-- <button type="button" id="contant"><i class="fa-solid fa-bars"></i></button> -->
@@ -17,11 +17,12 @@
             <a href="https://github.com/wrouruy" id="href"><i class="fa-brands fa-github"></i>github</a>
             <a href="https://t.me/wrouruy" id="href"><i class="fa-brands fa-telegram"></i>telegram</a>
 
+            <div id="isDarkBTN"><div id="switchBox"></div></div>
             <button type="button" id="reload"><i class="fa-solid fa-rotate-right"></i></button>
         </div>
         <p id="textFile">recognize the file type:</p>
         <div class="file-upload">
-            <label for="fileName" class="custom-file-upload">upload file</label>
+            <label for="fileName" id="customFileUpload">upload file</label>
             <input type="file" id="fileName">
         </div>
         <p id="valueText"></p>

@@ -19,18 +19,43 @@ function checkFileType(source){
         return `Database file`
     } else if(ext == 'html' || ext == 'css' || ext == 'js' || ext == 'php'){
         return `Web file`
+    } else if(ext == 'stl' || ext == 'obj' || ext == 'fbx' || ext == 'dae' || ext == 'blend' || ext == 'gltf'){
+        return `3D-object file`
     } else{
         return `unknown file`
     }
-    
+
 }
 
 console.log(checkFileType(`ujudhhfpi.png`))
 
 
+let darkMod = false;
+isDarkBTN.onclick = function(){
+    if(darkMod == false){
+        switchBox.style.marginLeft = '62%';
+        wrap.style.backgroundColor = 'rgb(34, 34, 34)';
+        customFileUpload.style.borderColor = 'rgb(194, 194, 194)';
+        customFileUpload.style.color = 'rgb(194, 194, 194)';
+        valueText.style.color = 'rgb(194, 194, 194)';
+        textFile.style.color = 'rgb(194, 194, 194)';
+
+        darkMod = true
+    } else if(darkMod == true){
+        switchBox.style.marginLeft = '2%';
+        wrap.style.backgroundColor = 'transparent'; 
+        customFileUpload.style.borderColor = 'black';
+        customFileUpload.style.color = 'black';
+        valueText.style.color = 'black';
+        textFile.style.color = 'black';
+
+        darkMod = false
+    }
+}
+
 
 fileName.onchange = function(){
-    valueText.innerText = 'it is: ' + checkFileType(fileName.value)
+    valueText.innerHTML = 'it is: ' + checkFileType(fileName.value)
 }
 reload.onclick = function(){
     window.location.reload()
@@ -52,3 +77,5 @@ contant.onclick = function(){
         contantVision = true;
     }
 }
+
+

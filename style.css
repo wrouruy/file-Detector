@@ -48,8 +48,8 @@
     align-items: center;
 }
 .logoContainer{
-    width: 5%;
-    height: 50%;
+    width: 100px;
+    height: 20px;
     background-color: rgb(124, 124, 124);
     margin-left: 2%;
     display: flex;
@@ -78,8 +78,8 @@
 }
 
 #reload{
-    width: 1.5%;
-    height: 55%;
+    width: 30px;
+    height: 30px;
     background-color: rgb(124, 124, 124);
     border: 5px solid rgb(124, 124, 124);
     border-radius: 50%;
@@ -117,8 +117,8 @@ span.valueSpan{
 
 
 #isDarkBTN{
-    width: 3%;
-    height: 50%;
+    width: 50px;
+    height: 20px;
     border: #313131 solid 1px;
     border-radius: 55px;
     background-color: #313131;

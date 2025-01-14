@@ -27,9 +27,6 @@ function checkFileType(source){
 
 }
 
-console.log(checkFileType(`ujudhhfpi.png`))
-
-
 let darkMod = false;
 isDarkBTN.onclick = function(){
     if(darkMod == false){

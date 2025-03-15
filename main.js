@@ -51,22 +51,22 @@ isDarkBTN.onclick = function(){
 }
 
 
-fileName.onchange = function(){
+fileName.onchange = () => {
     valueText.innerHTML = 'it is: ' + checkFileType(fileName.value)
 }
-reload.onclick = function(){
+reload.onclick = () => {
     window.location.reload()
 }
 
 let contantVision = true;
 contant.onclick = function(){
-    if(contantVision == true){
+    if(contantVision){
         href.style.display = 'flex';
         setTimeout(() =>{
             href.style.color = 'black';
         }, 1000)
         contantVision = false;
-    } else if(contantVision == false){
+    }else{
         href.style.display = 'none';
         setTimeout(() =>{
             href.style.color = 'transparent';
